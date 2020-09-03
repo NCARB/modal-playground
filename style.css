@@ -1,4 +1,4 @@
-  /* @reference "custom-theme/jquery-ui-1.8.12.custom.css"; */
+/* @reference "custom-theme/jquery-ui-1.8.12.custom.css"; */
 /* @reference "baseline.css"; */
 
 /* Site Styles
@@ -1307,21 +1307,7 @@ background: rgba(0,0,0,0.8);
 opacity: 1;
 }
 .ui-dialog .ui-dialog-buttonpane { border: none }
-.ui-widget-header.ui-corner-all {
-font-size: 16px;
-color: #333;
-border: 1px solid #d3d3d3;
-border-width: 0 0 1px 0;;
-font-weight: normal;
-height: 44px;
-line-height: 44px;
-background: #ececec;
--webkit-border-radius: 4px 4px 0 0;
--moz-border-radius: 4px 4px 0 0;
--o-border-radius: 4px 4px 0 0;
--ms-border-radius: 4px 4px 0 0;
-border-radius: 4px 4px 0 0;
-}
+.ui-widget-header.ui-corner-all {font-size: 16px;color: #333;border: 1px solid #d3d3d3;/* border-width: 0 0 1px 0; *//* font-weight: normal; *//* height: 44px; *//* line-height: 44px; */background: #ececec;/* -webkit-border-radius: 4px 4px 0 0; */-moz-border-radius: 4px 4px 0 0;-o-border-radius: 4px 4px 0 0;-ms-border-radius: 4px 4px 0 0;border-radius: 4px 4px 0 0;}
 
 #impersonation_banner {
   position: fixed;
@@ -1567,5 +1553,4 @@ td .inline-action {
 
 .order-override-total {
     color: #ff0000;
-}
 }

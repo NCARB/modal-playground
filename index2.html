@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .flex-row {
+            display: flex;
+            /* or inline-flex */
+            flex-direction: row;
+        }
+
+        .flex-col {
+            display: flex;
+            /* or inline-flex */
+            flex-direction: col;
+        }
+        .item-width {
+            min-width: 16em;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href="./style.css" />
+    <link rel='stylesheet' href='https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.12/themes/black-tie/jquery-ui.css' />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+
+
+
+    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog"
+        aria-labelledby="ui-dialog-title-ConfirmContactInfoAndSchedule"
+        style="display: block; z-index: 1002; outline: 0px; height: auto; width: 596px; top: 221.5px; left: 645.5px;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-ConfirmContactInfoAndSchedule">
+                <strong>Is Your Contact Information Correct?</strong></span>
+            <a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div class="exam-schedule dialog-confirm ui-dialog-content ui-widget-content"
+            style="width: auto; min-height: 76px; height: auto; display: flex;" id="ConfirmContactInfoAndSchedule"
+            scrolltop="0" scrollleft="0">
+
+
+
+            <div class="flex-row">
+                <label class="contact-address-header item-width"  >
+                    NAME
+                </label>
+                <div>
+                    <label class="flex-col">
+                        Chad Fuller
+                    </label>
+                    <label class="flex-col">
+                        Your name must match the name printed on your legal form of identificaiton
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <label class="contact-address-header item-width"  >
+                    EMAIL
+                </label>
+                <label class="flex-col">chad.fuller.yahoo.com</label>
+            </div>
+
+            <div class="flex-row">
+                <label class="contact-address-header item-width"  >
+                    MAILING ADDRESS
+                </label>
+                <div>
+                    <label class="flex-col">
+                        12 Mainst
+                    </label>
+                    <label class="flex-col">
+                        Apt 12 B
+                    </label>
+                    <label class="flex-col">
+                        Plano Al 22207
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <label class="contact-address-header item-width"  >
+                    PHONE NUMBERS
+                </label>
+                <div>
+                    <label class="flex-col">
+                        Cell: (213) 020-4444
+                    </label>
+                    <label class="flex-col">
+                        Work: (213) 020-4444
+                    </label>
+                </div>
+            </div>
+            
+            <span><label class="exam-schedule-row">If needed, please update your contact information before you
+                    schedule.</label></span>
+            <span class="exam-schedule-row modal-schedule-buttons">
+                <span>
+                    <a href="/Records/Examination/Schedule/A00700053"
+                        class="modal-schedule-link button left primary schedule opensLoadingModal ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                        role="button" aria-disabled="false"><span class="ui-button-text">
+                            Schedule Exam
+                        </span></a>
+                    <a href="#"
+                        class="button left secondary cancel-button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                        role="button" aria-disabled="false"><span class="ui-button-text">Cancel</span></a>
+                </span>
+                <span class="contact-button">
+                    <a href="/Records/Record/Profile"
+                        class="button secondary right schedule ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                        role="button" aria-disabled="false"><span class="ui-button-text">
+                            Update Contact Information
+                        </span></a>
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
